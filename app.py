@@ -8,8 +8,12 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.preprocessing import LabelBinarizer
 import streamlit as st
 import re
-st.set_page_config(layout="wide")
-
+st.set_page_config(
+    page_title="Industrial Copper Modeling",  # Title of the page
+    page_icon="🏭",  # Icon representing industrial processes
+    layout="wide",  # Layout of the page
+    initial_sidebar_state="expanded"  # Sidebar state (optional)
+)
 st.write("""
 <div style='text-align:center'>
     <h1 style='color:#009999;'>Industrial Copper Modeling Application</h1>
@@ -93,7 +97,7 @@ with tab1:
             new_sample = np.concatenate((new_sample[:, [0,1,2, 3, 4, 5, 6,]], new_sample_ohe, new_sample_be), axis=1)
             new_sample1 = scaler_loaded.transform(new_sample)
             new_pred = loaded_model.predict(new_sample1)[0]
-            st.write('## :green[Predicted selling price:] ', np.exp(new_pred))
+            st.write('## :green[Predicted selling price  💰:] ', np.exp(new_pred))
             
 with tab2: 
     
@@ -148,7 +152,7 @@ with tab2:
             new_sample = cscaler_loaded.transform(new_sample)
             new_pred = cloaded_model.predict(new_sample)
             if new_pred==1:
-                st.write('## :green[The Status is Won] ')
+                st.write('## :green[The Status is Won] 🏆')
             else:
-                st.write('## :red[The status is Lost] ')
+                st.write('## :red[The status is Lost] 😕')
                 
