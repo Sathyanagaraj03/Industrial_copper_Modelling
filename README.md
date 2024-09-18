@@ -1,6 +1,6 @@
 # Industrial Copper Price Modeling
 
-![industrial copper modelling](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREfRESMi8_ETc5m7RdkzirL-mHpjDxaY8AsA&s)
+![industrial copper modelling](https://img.freepik.com/premium-photo/generative-ai-copper-wire-cable-production-coils-metal-steel-industrial-plant_874904-1260.jpg)
 
 
 This project focuses on building predictive models for industrial copper prices. Using historical data and various economic and industrial factors, we develop models that aim to predict future copper prices. The project involves data preprocessing, feature engineering, model training, evaluation, and predictions to help in market analysis and decision-making.
